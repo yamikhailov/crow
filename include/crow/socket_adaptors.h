@@ -99,7 +99,7 @@ namespace crow
 
         boost::asio::io_service& get_io_service()
         {
-            return raw_socket().get_io_service();
+            return GET_IO_SERVICE(raw_socket());
         }
 
         template <typename F> 
